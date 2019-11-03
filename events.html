@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn">
+  <head>
+    <title>Events</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,600,700" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        padding-top: 95px;
+        font-family: 'Advent Pro', sans-serif; !important;
+        background-image: url("img/background_image.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+      }
+      table, th, td {
+        border: black solid 3px !important;
+      }
+      .bg-dark {
+        transition:750ms ease;
+        background:transparent !important;
+      }
+      .bg-dark.scrolled {
+        background:#ff6c18 !important;
+      }
+      .navbar-size {
+        font-size: 21px;
+      }
+      .paddingbottom {
+        padding: 0%;
+      }
+      .navbar-nav {
+        flex-flow: row nowrap;
+      }
+      .navbar {
+        flex-flow: row nowrap;
+        display: inline-flex;
+      }
+      .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+        background-color: #ff6c18 !important;
+      }
+      .googleCal {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      width: 90%;
+      height: 0;
+      overflow: hidden;
+      }
+      .googleCal iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-info">
+
+    <!--<div class="row justify-content-center">
+      <div class = "googleCal">
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=2sq8b62m1po9bhkmcc6iohqnuc%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div> -->
+    <nav id="nav" class="navbar navbar-light bg-dark navbar-expand-md fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html#main">
+            <img src="img/navbar_logo.png" alt="UF EWEEK 2019" height="50" width="50">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#menu" aria-controls="menu"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link navbar-size mr-3" href="index.html#about"><strong>ABOUT</strong></a>
+            <a class="nav-item nav-link navbar-size mr-3" href="events.html"><strong>EVENTS</strong></a>
+            <a class="nav-item nav-link navbar-size mr-3" href="directors.html  "><strong>DIRECTORS</strong></a>
+            <a class="nav-item nav-link navbar-size mr-3" href="sponsorship.html"><strong>SPONSORS</strong></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container table-responsive-sm">
+      <h1 class="text-center mb-4"><strong>EVENTS FOR UF ENGINEERS' WEEK 2019</strong></h1>
+      <table class="table table-bordered border bg-info">
+        <tr>
+          <th colspan="7" class="text-center"><h3>FEBRUARY 2019</h3></th>
+        </tr>
+        <tr class="text-center">
+          <td>SUN</td>
+          <td>MON</td>
+          <td>TUE</td>
+          <td>WED</td>
+          <td>THU</td>
+          <td>FRI</td>
+          <td>SAT</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>11
+            <div class="row"></div>
+              <button type="button" class="btn btn-rounded btn-info btn-lg" data-toggle="modal" data-target="#efair">
+                  <i class="fas fa-calendar-alt"></i>
+              </button>
+          </td>
+          <td>12
+            <div class="row"></div>
+              <button type="button" class="btn btn-rounded btn-info btn-lg" data-toggle="modal" data-target="#efair">
+                  <i class="fas fa-calendar-alt"></i>
+              </button>
+
+              <!-- The Modal -->
+              <div class="modal fade" id="efair">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title"><strong>ENGINEERING FAIR (EFAIR)</strong></h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      February 11, 2019 - February 12, 2019<br>
+                      9:00 AM - 2:00 PM<br>
+                      Reitz Student Union<br><br>
+                      The Engineering Fair is targeted
+                      towards the youngest generation
+                      of students, namely those in grades
+                      K-12. With attendance of over 2,000
+                      students from 30 different counties,
+                      companies are invited to present
+                      their story and experience with the
+                      generation of the future!
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </td>
+          <td>13
+            <div class="row"></div>
+              <button type="button" class="btn btn-rounded btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                  <i class="fas fa-calendar-alt"></i>
+              </button>
+
+              <!-- The Modal -->
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title"><strong>ESL'S INSPIRE TO ASPIRE</strong></h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      February 13, 2019<br>
+                      10:00 AM - 2:00 PM<br>
+                      Reitz Student Union North Lawn<br><br>
+                      This event is held on behalf of the ESL (service) team, apart of UF's Engineer's Week 2019.
+                      Our team will be setting up stations with different activities that all students can participate in.
+                      The activities will be then be donated to KidCity USA, a local chapter that allows toddlers and children to
+                       advance their studies at a younger age.
+                      The activities will be STEM-related, but the event is open to all!<br><br>
+                      <a href="https://www.facebook.com/events/2101117153267949/" target="_blank" id="#link"><strong>Facebook Event</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+              <div class="row"></div>
+              <button type="button" class="btn btn-rounded btn-info btn-lg" data-toggle="modal" data-target="#esl">
+                  <i class="fas fa-calendar-alt"></i>
+              </button>
+
+              <!-- The Modal -->
+              <div class="modal fade" id="esl">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title"><strong>ENGINEERING LEADERSHIP FORUM (ELF)</strong></h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      February 13, 2019<br>
+                      5:00 PM - 7:00 PM<br>
+                      Arredondo's Cafe<br><br>
+                      Engineering Leadership Forum (ELF) introduces speakers from every field of engineering
+                      (mechanical, electrical, civil, environmental, industrial and biomedical)
+                      who will provide insightful information about their experience in the engineering world.
+                      They'll also answer any questions you may have about their specific field of work!<br><br>
+                      <a href="https://www.facebook.com/events/2142389155820871/" target="_blank" id="#link"><strong>Facebook Event</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="row"></div>
+              <button type="button" class="btn btn-rounded btn-info btn-lg" data-toggle="modal" data-target="#dodgeball">
+                <i class="fas fa-volleyball-ball"></i>
+              </button>
+
+              <!-- The Modal -->
+              <div class="modal fade" id="dodgeball">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title"><strong>DODGEBALL TOURNAMENT</strong></h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      February 13, 2019<br>
+                      7:00 PM - 10:00 PM<br>
+                      Flavet Field<br><br>
+                      E-Week's 2019 Dodgeball Tournament is a 5 vs 5, double elimination game hosted by E-Week's fitness department.
+                      It will be fun and a good time to relieve, to relax, and to vent some stress. Just remember the 5 D's of dodgeball: Dodge, Duck, Dip, Dive & Dodge!<br><br>
+                      It costs $10 to enter, and all proceeds (a minimum of $200) will be given to the winner to go towards their organization's DM page.<br><br>
+                      Venmo $10 to @eweek_2019 with your team members' names and organization to sign up!<br><br>
+                      <a href="https://www.facebook.com/events/1906649112790221/" target="_blank"><strong>Facebook Event</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row"></div>
+              <button type="button" class="btn btn-rounded btn-info btn-lg" data-toggle="modal" data-target="#trivia">
+                  <i class="fas fa-calendar-alt"></i>
+              </button>
+              <div class="modal fade" id="trivia">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title"><strong>THETA TAU'S TRIVIA NIGHT</strong></h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      February 13, 2019<br>
+                      8:00 PM - 11:00 PM<br>
+                      World of Beer<br><br>
+                      Engineering Society, UF Theta Tau - Zeta Gamma Chapter,
+                      is hosting a Trivia Night for Engineer's Week 2019.<br><br>
+                      APPETIZERS INCLUDED!<br><br>
+                      Trivia will begin at 9:00 PM, but please arrive by 8:00 PM if you wish to participate!<br><br>
+                      <a href="https://www.facebook.com/events/2159228457722010/" target="_blank"><strong>Facebook Event</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </td>
+          <td>14
+            <div class="row"></div>
+              <button type="button" class="btn btn-rounded btn-info btn-lg" data-toggle="modal" data-target="#bowling">
+                <i class="fas fa-bowling-ball"></i>
+              </button>
+              <!-- The Modal -->
+              <div class="modal fade" id="bowling">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title"><strong>BOWLING WITH FACULTY</strong></h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      February 14, 2019<br>
+                      6:00 PM - 8:00 PM<br>
+                      Reitz Union Game Room<br><br>
+                      Bowling with Faculty provides a unique opportunity for all students, professors, and advisors at the University of Florida.
+                      Students get the chance to know some of the most influential people in the field of engineering and
+                      broaden their networks in a night of free fun and games, while faculty members can get to know their
+                      students and share their experiences in a more casual setting than a classroom or office.
+                      Take this opportunity to expand your network and explore new horizons all while enjoying free bowling!<br>
+                      <strong>Please bring your Student ID to this event!</strong><br><br>
+                      <a href="https://www.facebook.com/events/239540096948898/" target="_blank" id="#link"><strong>Facebook Event</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </td>
+          <td>15
+            <div class="row"></div>
+              <button type="button" class="btn btn-rounded btn-info btn-lg" data-toggle="modal" data-target="#efest">
+                  <i class="fas fa-calendar-alt"></i>
+              </button>
+              <!-- The Modal -->
+              <div class="modal fade" id="efest">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title"><strong>ENGINEERING FESTIVAL (EFEST)</strong></h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      February 15, 2019<br>
+                      5:00 PM - 10:00 PM<br>
+                      Flavet Field<br><br>
+                      The Engineering Festival is a
+                      duet for art and science, a day of
+                      fun and excitement for over 800
+                      students in and beyond the College
+                      of Engineering. This is the largest
+                      student STEM celebration, featuring
+                      carnival booths, live entertainment,
+                      and food for everyone to enjoy!<br><br>
+                      There will be Performances by:<br>
+                      Arrows In Action<br>
+                      The Whiskey Dicks<br>
+                      Sidney Tran<br>
+                      Netgate<br><br>
+                      <a href="https://www.facebook.com/ufefest2019/" target="_blank"><strong>
+                        Facebook Page</strong></a><br>
+                      <a href="https://www.instagram.com/ufefest2019/" target="_blank"><strong>Instagram Page</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </td>
+          <td>16
+            <div class="row"></div>
+            <button type="button" class="btn btn-rounded btn-info btn-lg" data-toggle="modal" data-target="#fitness">
+              <i class="fas fa-briefcase-medical"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>17
+            <div class="row"></div>
+              <button type="button" class="btn btn-rounded btn-info btn-lg invisible" data-toggle="modal" data-target="#fitness">
+                <i class="fas fa-briefcase-medical"></i>
+              </button>
+              <!-- The Modal -->
+              <div class="modal fade" id="fitness">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title"><strong>STAYING FIT ON CAMPUS</strong></h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      February 16, 2019<br>
+                      10:00 AM - 12:00 PM<br>
+                      Reitz Union Rion Ballroom<br><br>
+                      Hosted by E-Week's fitness department, "Staying Fit on Campus" will feature athletic guest speakers as well as a raffle where you have the chance to win a $100 Study Edge card!<br><br>
+                      There will also be athletic organizations tabling before and after the event.<br><br>
+                      <a href="https://www.facebook.com/events/2051379885152696/" target="_blank"><strong>Facebook Event</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row"></div>
+              <button type="button" class="btn btn-rounded btn-info btn-lg invisible" data-toggle="modal" data-target="#myModal">
+                  <i class="fas fa-calendar-alt"></i>
+              </button>
+              <br>
+              <button type="button" class="btn btn-rounded btn-info btn-lg invisible" data-toggle="modal" data-target="#myModal">
+                  <i class="fas fa-calendar-alt"></i>
+              </button>
+          </td>
+          <td>18
+            <div class="row"></div>
+              <button type="button" class="btn btn-rounded btn-info btn-lg" data-toggle="modal" data-target="#closing">
+                  <i class="fas fa-calendar-alt"></i>
+              </button>
+
+              <!-- The Modal -->
+              <div class="modal fade" id="closing">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title"><strong>CLOSING CEREMONIES</strong></h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      February 18, 2019<br>
+                      6:30 PM - 8:30 PM<br>
+                      Reitz Union Grand Ballroom
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+        </tr>
+      </table>
+    </div>
+    <hr />
+    <footer class="page-footer">
+      <div class="footer-copyright container">
+        <div class="row justify-content-center">
+          <section class="col-sm-6 text-center">
+            <p><strong>&copy; UNIVERSITY OF FLORIDA ENGINEERS' WEEK 2019</strong></p>
+          </section>
+          <section class="col-sm-6 text-center">
+            <div class="row mb-2 no-gutters">
+              <div class="col-3">
+                <a href="https://www.facebook.com/UFEWeek/" target="_blank" class="btn btn-primary btn-lg">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="https://twitter.com/ufeweek" target="_blank" class="btn btn-primary btn-lg">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="https://www.instagram.com/ufeweek2019/" target="_blank" class="btn btn-primary btn-lg">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="https://www.snapchat.com/add/ufeweek2019" target="_blank" class="btn btn-primary btn-lg">
+                  <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <script>
+      $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 55);
+      });
+    </script>
+  </body>
+</html>
