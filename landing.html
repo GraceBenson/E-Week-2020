@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" class="animated fadeIn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,600,700" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Advent Pro', sans-serif; !important;
+        background-image: url("img/background_image.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+      }
+      #mainlink {
+        color: #000000 !important;
+      }
+      .bg-dark {
+        transition:750ms ease;
+        background:transparent !important;
+      }
+      .bg-dark.scrolled {
+        background:#ff6c18 !important;
+      }
+      .navbar-size {
+        font-size: 21px;
+      }
+      .paddingbottom {
+        padding: 0%;
+      }
+      .navbar-nav {
+        flex-flow: row nowrap;
+      }
+      .navbar {
+        flex-flow: row nowrap;
+        display: inline-flex;
+      }
+      .card {
+        background-color: transparent;
+        border: none;
+      }
+      .card-header {
+        background-color: transparent;
+        border: none;
+      }
+      .modal-backdrop {
+        z-index: 1020;
+      }
+      .jumbotron {
+        background-color: white !important;
+      }
+      .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+        background-color: #ff6c18 !important;
+      }
+    </style>
+    <title>UF Engineers' Week 2020</title>
+  </head>
+  <body class="bg-info">
+    <header class="jumbotron jumbotron-fluid" id="main">
+      <div class="container mt-5 pb-0">
+        <div class="row text-center no-gutters">
+          <section class="col-md-6 mb-4">
+            <h1 class="display-3 text-center" id="countdown"></h1>
+          </section>
+          <section class="col-md-6">
+            <img src="images/eweek_logo.png" alt="UF EWeek 2020" height="400px" width="400px" />
+            <h3 class="mt-1"><strong>UNIVERSITY OF FLORIDA'S ENGINEERS' WEEK 2020</strong></h3>
+            <h3><strong>FEBRUARY 17 - 24, 2020</strong></h3>
+          </section>
+        </div>
+      </div>
+    </header>
+    <div class="container mt-5">
+      <div class="row">
+        <section class="col-12 mb-3" id="about">
+          <h1 class="text-center"><strong>ABOUT UF ENGINEERS' WEEK</strong></h1>
+        </section>
+        <div class="container">
+                <!-- Example row of columns -->
+                <div class="row">
+                  <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header" id="whatHeader">
+                                <h3>THE WHAT
+                                </strong></h3>
+                            </div>
+                            <div id="what" aria-labelledby="whatHeader">
+                                <div class="card-body py-0">
+                                <p>Engineers’ Week at the University of Florida is a week long celebration, hosted by the Benton Engineering Council through UF’s College of Engineering,
+                                    that aims to recognize engineers’ contribution to modern social development through a series of fun, interactive, and informative events.
+                                    This year's theme is <strong>Assembling the Future</strong>. While Engineers’ Week aims to celebrate engineers,
+                                    the events also underscore the relationship between engineering and all other fields of study,
+                                    from fine arts and journalism to liberal arts and social sciences.</p>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header" id="whoHeader">
+                                <h3>THE WHO
+                                </strong></h3>
+                            </div>
+                            <div id="who" aria-labelledby="whoHeader">
+                                <div class="card-body py-0">
+                                <p>Engineers’ Week at the University of Florida began in 1945 with the Engineering and Science Fair (E-Fair).
+                                    E-Fair today is a two-day event that invites 1,500 elementary, middle, and high school students from all parts of Florida to participate
+                                    in Engineers’ Week through campus tours and interactive activity booths showcasing students’ success and achievements as Gator Engineers.
+                                    The Engineering and Science Fair yielded UF’s first Engineers’ Week in 1951, which has grown tremendously in the past decades through
+                                    the development of various exciting events that celebrate modern engineering.</p>
+                                </div>
+                            </div>
+                         </div>
+                  </div>
+                  <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header" id="whyHeader">
+                                <h3><strong>
+                                THE WHY
+                            </strong></h3>
+                            </div>
+                            <div id="why" aria-labelledby="whyHeader">
+                            <div class="card-body py-0">
+                                <p>The events are highly anticipated and heavily attended by students at the university as well as those at elementary, middle, and high schools throughout the state.
+                                While Engineers’ Week at the University of Florida aims to celebrate innovation, it highlights Gator Engineering through the collaborative, communicative, and
+                                interdisciplinary nature that serves as the driving force for social progress through modern engineering..</p>
+                            </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+            
+                <hr>
+            
+              </div>       
+      </div>
+    </div>
+    <hr />
+    <footer class="page-footer">
+      <div class="footer-copyright container">
+        <div class="row justify-content-center">
+          <section class="col-sm-6 text-center">
+            <p><strong>&copy; UNIVERSITY OF FLORIDA ENGINEERS' WEEK 2020</strong></p>
+          </section>
+          <section class="col-sm-6 text-center">
+            <div class="row mb-2 no-gutters">
+              <div class="col-3">
+                <a href="https://www.facebook.com/UFEWeek/" target="_blank" class="btn btn-primary btn-lg">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="https://twitter.com/ufeweek" target="_blank" class="btn btn-primary btn-lg">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="https://www.instagram.com/ufeweek2020/" target="_blank" class="btn btn-primary btn-lg">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="https://www.snapchat.com/add/ufeweek2020" target="_blank" class="btn btn-primary btn-lg">
+                  <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <script>
+      $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 55);
+      });
+    </script>
+    <script>
+      var countdownDate = new Date("Feb 17, 2020 00:00:00").getTime();
+      var x = setInterval(function() {
+        var nowDate = new Date().getTime()
+        var diff = countdownDate - nowDate;
+        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        document.getElementById("countdown").innerHTML = "<strong>COMING SOON <br>" + days + " DAYS <br>" +
+        hours + " HOURS <br>" + minutes + " MINUTES <br>" + seconds + " SECONDS <br>"
+        if(diff < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "ASSEMBLING THE FUTURE";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
