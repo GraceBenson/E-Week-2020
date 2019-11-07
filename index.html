@@ -125,7 +125,7 @@
                   <div class="card-body py-0">
                     <p>Engineers’ Week at the University of Florida is a week long celebration, hosted by the Benton Engineering Council through UF’s College of Engineering,
                       that aims to recognize engineers’ contribution to modern social development through a series of fun, interactive, and informative events.
-                      This year's theme is <strong>Kick It Into Gear</strong>. While Engineers’ Week aims to celebrate engineers,
+                      This year's theme is <strong>Assembling the Future</strong>. While Engineers’ Week aims to celebrate engineers,
                       the events also underscore the relationship between engineering and all other fields of study,
                       from fine arts and journalism to liberal arts and social sciences.</p>
                   </div>
@@ -270,12 +270,11 @@
         var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((diff % (1000 * 60)) / 1000);
-        document.getElementById("countdown").innerHTML = "<strong>" + days + " DAYS <br>" +
-        hours + " HOURS <br>" + minutes + " MINUTES <br>" + seconds + " SECONDS <br>" +
-        " TO KICK IT <br> INTO GEAR</strong>"
+        document.getElementById("countdown").innerHTML = "<strong>COMING SOON <br>" + days + " DAYS <br>" +
+        hours + " HOURS <br>" + minutes + " MINUTES <br>" + seconds + " SECONDS <br>"
         if(diff < 0) {
           clearInterval(x);
-          document.getElementById("countdown").innerHTML = "TIME TO KICK IT INTO GEAR";
+          document.getElementById("countdown").innerHTML = "ASSEMBLING THE FUTURE";
         }
       }, 1000);
     </script>
